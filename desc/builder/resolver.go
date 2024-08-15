@@ -43,7 +43,7 @@ func (d *dependencies) add(fd *desc.FileDescriptor) {
 // file descriptor (or an error).
 type dependencyResolver struct {
 	resolvedRoots map[Builder]*desc.FileDescriptor
-	seen          map[Builder]struct{}
+	seen          map[Builder]struct{} // unused
 	opts          BuilderOptions
 }
 
